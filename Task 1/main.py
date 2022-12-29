@@ -17,3 +17,20 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30, "hasDog": False },
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
+
+def filterDogOwners(arr):
+  for i in arr:
+    if i['hasDog'] == True:
+      print(f'Šie users turi augintinį: {list(i.items())}')
+  
+
+filterDogOwners(users)  
+
+
+def filterAdults(arr):
+  for i in arr:
+    if i['age'] >= 21:
+      print(f'Šie Users yra pilnamečiai: {dict(i.items())}')
+  
+
+filterAdults(users)  

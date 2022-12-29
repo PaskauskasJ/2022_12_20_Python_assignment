@@ -9,3 +9,9 @@ audi = {
   "year": 2005,
   "color": 'white',
 }
+
+def showObjectKeys(obj):
+  return list(obj.values())
+    
+
+print(showObjectKeys(audi))

@@ -19,3 +19,27 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30 },
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
+
+def getUserAverageAge(arr):
+  age = 0
+  for i in arr:
+    age = age + int((i['age']))
+  print(age / len(arr))
+      
+
+getUserAverageAge(users)  
+
+
+
+
+vardai = []
+def getUsersNames(arr):
+  
+  for i in arr:
+    vardai.append(i['name'])
+    vardai.sort()
+
+      
+getUsersNames(users)
+print(vardai)
+

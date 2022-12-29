@@ -1,4 +1,9 @@
 # Importuokite reikiamus modulius, kad veiktų žemiau nurodytos funkcijos
+from modules.numbers.numbers import *
+from modules.math.composition import composition as addition
+from modules.math.division import division as divivsion
+from modules.math.multiplication import *
+from modules.math.subtraction import *
 
 
 # Kitų failų ir žemiau esančio kodo nekeiskite
