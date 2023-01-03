@@ -42,7 +42,7 @@ def filterAdults(arr):
   for i in arr:
     if i['age'] >= 18:
       pilnameciai.append(dict(i.items()))
-      # print(f'Šie Users yra pilnamečiai: {dict(i.items())}')
+
   
   
 #Paledžiame funkciją 'filterAdults' kuriai kaip argumentą paduodame 'users' masyvą
