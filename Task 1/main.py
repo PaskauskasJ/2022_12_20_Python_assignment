@@ -34,13 +34,19 @@ filterDogOwers(users)
 print('-------------------------------')
 
 
-# Kuriame funkciją 'filterAdults' kuri iteruos paduotą masyvą kaip argumentą ir iš jo išrinks elementus kurių 'key' ir 'value' poros 'value' vertė bus didesnė už 18 
+#Susikuriame naują tuščią masyvą į kurį sukelsime tik plnamečius asmenis
+pilnameciai = []
 
+# Kuriame funkciją 'filterAdults' kuri iteruos paduotą masyvą kaip argumentą ir iš jo išrinks elementus kurių 'key' ir 'value' poros 'value' vertė bus didesnė ar lygi 18 ir pridės juos į masyvą pilnamečiai 
 def filterAdults(arr):
   for i in arr:
     if i['age'] >= 18:
-      print(f'Šie Users yra pilnamečiai: {dict(i.items())}')
+      pilnameciai.append(dict(i.items()))
+      # print(f'Šie Users yra pilnamečiai: {dict(i.items())}')
+  
   
 #Paledžiame funkciją 'filterAdults' kuriai kaip argumentą paduodame 'users' masyvą
-
 filterAdults(users)  
+
+#Išspausdiname naujai gautą masyvą 'pilnameciai
+print(f' Šiame masve esantys žmonės yra pilnamečiai: {pilnameciai}')
