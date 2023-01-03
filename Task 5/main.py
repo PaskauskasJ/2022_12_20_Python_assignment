@@ -1,4 +1,7 @@
 # Importuokite reikiamus modulius, kad veiktų žemiau nurodytos funkcijos
+
+#Importuojame modulius taip, kad veiktų žemiau esančios funkcijos. Tam kad main.py faile kodas būtų nepakeistas, kur reikia kintamieji ar funkcijų pavadinimai interpretuojami kitais vardais su "as"  
+
 from modules.numbers.numbers import *
 from modules.math.composition import composition as addition
 from modules.math.division import division as divivsion

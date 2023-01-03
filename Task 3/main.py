@@ -10,8 +10,9 @@ audi = {
   "color": 'white',
 }
 
+# Kuriame funkciją 'showObjectKeys' kuri paims objektą kaip argumentą ir grąžins masyvą su objekto 'values'
 def showObjectKeys(obj):
   return list(obj.values())
     
-
+#Išspausdiname funkcijos rezultatą
 print(showObjectKeys(audi))

@@ -18,19 +18,29 @@ users = [
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
 
-def filterDogOwners(arr):
+# Kuriame funkciją 'filterDogOwners' kuri iteruos paduotą masyvą kaip argumentą ir iš jo išrinks elementus kurių 'key' ir 'value' pora bus lygi 'hasDog': True
+
+def filterDogOwers(arr):
   for i in arr:
     if i['hasDog'] == True:
       print(f'Šie users turi augintinį: {list(i.items())}')
+      
   
 
-filterDogOwners(users)  
+#Paledžiame funkciją 'filterDogOwers' kuriai kaip argumentą paduodame 'users' masyvą
+filterDogOwers(users)  
 
+# 2 užduoties dalies skirtukas
+print('-------------------------------')
+
+
+# Kuriame funkciją 'filterAdults' kuri iteruos paduotą masyvą kaip argumentą ir iš jo išrinks elementus kurių 'key' ir 'value' poros 'value' vertė bus didesnė už 18 
 
 def filterAdults(arr):
   for i in arr:
-    if i['age'] >= 21:
+    if i['age'] >= 18:
       print(f'Šie Users yra pilnamečiai: {dict(i.items())}')
   
+#Paledžiame funkciją 'filterAdults' kuriai kaip argumentą paduodame 'users' masyvą
 
 filterAdults(users)  
